@@ -1,0 +1,13 @@
+{
+  "manifestVersion": 1,
+  "id": "private_remnote_todoist_hotkey",
+  "name": "RemNote → Todoist Hotkey",
+  "author": "Private plugin",
+  "repoUrl": "https://github.com/Yulin-Cao/remnote-todoist-hotkey",
+  "version": { "major": 1, "minor": 0, "patch": 0 },
+  "theme": [],
+  "enableOnMobile": false,
+  "description": "Turn the focused Rem into a RemNote TODO and a linked Todoist task.",
+  "requestNative": false,
+  "requiredScopes": [{ "type": "All", "level": "ReadCreateModify" }]
+}

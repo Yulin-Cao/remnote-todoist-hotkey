@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "name": "remnote-todoist-private-plugin",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "dev": "cross-env NODE_ENV=development webpack serve --host 127.0.0.1 --port 8080 --no-open",
+    "build": "shx rm -rf dist && cross-env NODE_ENV=production webpack --color --progress",
+    "build:public-zip": "remnote-plugin validate && npm run build && cd dist && bestzip ../PluginZip.zip ./*"
+  },
+  "dependencies": {
+    "@remnote/plugin-sdk": "0.0.46",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2",
+    "bestzip": "^2.2.1",
+    "copy-webpack-plugin": "^11.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
+    "esbuild-loader": "^2.19.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "shx": "^0.3.4",
+    "style-loader": "^3.3.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.0"
+  }
+}

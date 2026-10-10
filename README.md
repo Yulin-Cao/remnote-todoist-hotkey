@@ -38,7 +38,7 @@ Requires Node.js 18 or newer:
 npm install
 npm test
 npm run check-types
-npm run build
+npm run build:public-zip
 ```
 
 The build creates `PluginZip.zip`.
